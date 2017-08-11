@@ -6,7 +6,7 @@ $(document).ready(function(){
   var colorInput = parseInt($("#color").val());
 
   $("#uhura, #scotty, #spock, #kirk").hide();
-  
+
   var result = seasonInput + animalInput + foodInput + colorInput;
 
     if (result <= 4){
@@ -20,6 +20,13 @@ $(document).ready(function(){
     }else{
       $("span").show();
     }
+
+    event.preventDefault();
+  });
+
+  $("#clear").click(function(event){
+    console.log("hi", $("#uhura, #scotty, #spock, #kirk"));
+    $("#uhura, #scotty, #spock, #kirk").hide();
 
     event.preventDefault();
   });
