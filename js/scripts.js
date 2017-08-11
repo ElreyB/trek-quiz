@@ -5,18 +5,18 @@ $(document).ready(function(){
   var foodInput = parseInt($("#food").val());
   var colorInput = parseInt($("#color").val());
 
-  $("#uhura, #scotty, #spock, #kirk").hide();
+  $("#uhura, #scotty, #spock, #kirk, .quiz").hide();
 
   var result = seasonInput + animalInput + foodInput + colorInput;
 
     if (result <= 4){
-      $("#kirk").show();
+      $("#kirk, .panel").show();
     } else if (result > 4 && result <= 8){
-      $("#scotty").show();
+      $("#scotty, .panel").show();
     }else if (result > 8 && result <= 12){
-      $("#uhura").show();
+      $("#uhura, .panel").show();
     }else if (result > 12){
-      $("#spock").show();
+      $("#spock, .panel").show();
     }else{
       $("span").show();
     }
@@ -25,9 +25,13 @@ $(document).ready(function(){
   });
 
   $("#clear").click(function(event){
-    console.log("hi", $("#uhura, #scotty, #spock, #kirk"));
     $("#uhura, #scotty, #spock, #kirk").hide();
 
     event.preventDefault();
+  });
+
+  $("#return").click(function(){
+    $("#uhura, #scotty, #spock, #kirk, .panel").hide();
+    $(".quiz").show();
   });
 });

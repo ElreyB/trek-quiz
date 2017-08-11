@@ -9,52 +9,54 @@
   </head>
   <body>
     <div class="container">
-      <div>
-        <form class="quiz">
-          <div class="form-group">
-            <p>pick a season</p>
-            <select id="season">
-              <option value="1">spring</option>
-              <option value="2">summer</option>
-              <option value="3">winter</option>
-              <option value="4">fall</option>
-            </select>
-          </div>
+      <form class="quiz well">
+        <div class="form-group">
+          <p>pick a season</p>
+          <select id="season">
+            <option value="1">spring</option>
+            <option value="2">summer</option>
+            <option value="3">winter</option>
+            <option value="4">fall</option>
+          </select>
+        </div>
 
-          <div class="form-group">
-            <p>pick an animal</p>
-            <select id="animal">
-              <option value="1">monkey</option>
-              <option value="2">dog</option>
-              <option value="3">cat</option>
-              <option value="4">shark</option>
-            </select>
-          </div>
+        <div class="form-group">
+          <p>pick an animal</p>
+          <select id="animal">
+            <option value="1">monkey</option>
+            <option value="2">dog</option>
+            <option value="3">cat</option>
+            <option value="4">shark</option>
+          </select>
+        </div>
 
-          <div class="form-group">
-            <p>pick a color</p>
-            <select id="color">
-              <option value="1">red</option>
-              <option value="2">blue</option>
-              <option value="3">black</option>
-              <option value="4">white</option>
-            </select>
-          </div>
+        <div class="form-group">
+          <p>pick a color</p>
+          <select id="color">
+            <option value="1">red</option>
+            <option value="2">blue</option>
+            <option value="3">black</option>
+            <option value="4">white</option>
+          </select>
+        </div>
 
-          <div class="form-group">
-            <p>which would you prefer</p>
-            <select id="food">
-              <option value="1">breakfast</option>
-              <option value="2">lunch</option>
-              <option value="3">dinner</option>
-              <option value="4">brunch</option>
-            </select>
-          </div>
+        <div class="form-group">
+          <p>which would you prefer</p>
+          <select id="food">
+            <option value="1">breakfast</option>
+            <option value="2">lunch</option>
+            <option value="3">dinner</option>
+            <option value="4">brunch</option>
+          </select>
+        </div>
 
-          <button class="btn" type="submit" >Submit</button>
-          <button id="clear" class="btn">Reset</button>
-        </form>
-        <span id="helpBlock" class="help-inline">please select all fields</span>
+        <button class="btn" type="submit" >Submit</button>
+        <button id="clear" class="btn">Reset</button>
+      </form>
+      <span id="helpBlock" class="help-inline">please select all fields</span>
+
+      <div class="panel panel-default">
+        <div class="panel-body">
           <div id="kirk">
             <h2>Captain Kirk</h2>
             <img src="img/kirk.jpg">
@@ -75,7 +77,8 @@
             <img src="img/uhura.jpg">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, nobis, eos similique impedit laborum enim quidem, saepe praesentium atque dolorum repellendus quas dolore fuga consectetur repellat? Harum nihil commodi quod?</p>
           </div>
-
+          <button id="return" class="btn">Return to form</button>
+        </div>
       </div>
     </div>
   </body>
